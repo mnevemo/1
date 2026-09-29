@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suez, Straits and Strategy</title> 
+    <style>
+      body{
+        font-family: 'Georgia', 'Times New Roman' , serif; 
+        background-color: #f0f7f9 ;
+        color: #2c3e50;
+        line-height: 1.7; 
+        margin: 0;
+        padding: 40px 20px;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    
+      }
+      .container {
+        max-width: 700px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 40px; 
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05) 
+      }
+      h1 { 
+        font-size: 32px;
+        color: #1a365d;
+        margin-bottom: 28px;
+        border-bottom: 3px solid #3182ce; 
+        padding-bottom: 12px;
+        position: relative;  
+        letter-spacing: -0.5px;
+      }
+      h1::after {
+        content:'';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(to right, #1e3a8a, #0d9488, transparent);
+        border-radius: 2px;
+
+      }
+       h2 { 
+        font-size: 30px;
+        color: #1a365d;
+        margin-bottom: 28px;
+        border-bottom: 3px solid #3182ce; 
+        padding-bottom: 12px;
+        position: relative;  
+        letter-spacing: -0.5px;
+      }
+      h2::after {
+        content:'';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(to right, #1e3a8a, #0d9488, transparent);
+        border-radius: 2px;
+      }
+       h3 { 
+        font-size: 23px;
+        color: #1a365d;
+        margin-bottom: 28px;
+        border-bottom: 3px solid #3182ce; 
+        padding-bottom: 12px;
+        position: relative;  
+        letter-spacing: -0.5px;
+      }
+      h3::after {
+        content:'';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background: linear-gradient(to right, #1e3a8a, #0d9488, transparent);
+        border-radius: 2px;
+
+      }
+       h5 { 
+        font-size: 18px;
+        color: #1a365d;
+        margin-bottom: 28px;
+        border-bottom: 2px solid #3182ce; 
+        padding-bottom: 5px;
+        position: relative;  
+        letter-spacing: -0.5px;
+      }
+      h5::after {
+        content:'';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(to right, #1e3a8a, #0d9488, transparent);
+        border-radius: 1px;
+
+      }
+       p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+      ul {
+        background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        background-color: #f7fafc;
+        padding: 20px 20px 20px 40px;
+        border-left: 4px solid #0d9488;
+        border-radius: 4px;
+        margin: 25px 0 30px 0; 
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+      }
+      ul:hover { 
+        transform: translateY(-4px);
+        box-shadow: 0 10px 20px rgba(13, 148, 136, 0.1);
+      }
+      li {
+        font-size: 17px; 
+        margin-bottom: 8px;
+        color: #334155;
+        font-weight: 500;
+      }
+      li:last-child{
+        margin-bottom: 0; 
+      }
+    .parent-container{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 20vh;
+    }
+      .button-container {
+        margin: 32px 0;
+      }
+    .highlight { 
+      background: linear-gradient(180deg, transparent 60%, rgba(224, 63, 94, 0.2)60%); 
+      padding: 0 4px;
+      font-weight: 400; 
+      border-radius: 3px;
+    }
+    .map-wrapper {
+      margin-top: 35px;
+      margin-bottom: 20px;
+      background-color: #f8fafc;
+      padding: 24px;
+      border-radius: 16px;
+      border: 1px dashed #cbd5e1;
+      text-align: center;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+      border: 1px solid rgba(0, 0, 0,0.08);
+      margin: 0 auto;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1),box-shadow 0.4s ease;
+    }
+    img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+    }
+    .caption {
+      display: block;
+      font-size: 14px; 
+      color: #64748b;
+      font-style: italic;
+      margin-top: 10px;
+    }
+    .more-link {
+      display: inline-block;
+      background-color: #1e3a8a;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      padding: 12px 24px;
+      transition: color 0.2s ease; 
+    }
+    .more-link:hover {
+      background-color: #1d4ed8;
+      text-decoration: underline;
+    }
+      </style>
+  </head>
+  <body>
+<div class="container">
+
+
+<h1>Suez, Straits and Strategy</h1>
+    <p>Let us discuss the importance of maritime routes in a changing world.</p>
+ <p> Throughout history, geography has been a decisive factor in the distribution of global power. Control over <span class="highlight">strategic chokepoints</span> - narrow maritime passages that concentrate trade and military movements - has allowed states to project influence far beyond their borders. dictating the flow of commerce, securing supply lines, and shaping the outcomes of war.</p>
+ <p>Among the most consequential of these corridors are:</p>
+ <ul>
+  <li>The Suez Canal</li>
+  <li>The Dardanelles</li>
+  <li>The Bosphorus</li>
+  <li> The Greenland-Iceland-United Kingdom (GUIK) gap</li>
+</ul>
+<p>By examining the interplay between geography, history, and strategic aligment, it becomes clear that geopolitical choices have consequnces that ripple across the world, shaping the future of global trade and power.</p> 
+<h3>Suez Canal</h3>
+<p> Egypt, often regarded as an unsuspecting nation with limited power, may possess a far greater capacity
+for influence than initially assumed. While it is neither an economic nor a political superpower, it
+possesses a source of influence which outweighs those labels: the Suez Canal. The Suez Canal is a
+crucial trade route between Europe and Asia, with even small crisis causing devastating effects.</p>
+<h5>Historical Precedents: When Chokepoints Shape Power</h5>
+<p> In a world increasingly defined by fragile supply chains and great-power competition, Egypt’s control of this chokepoint offers it a unique capacity to influence both regional and global outcomes. There are three major cases which highlight the dependency the world has on Egpyt.</p>
+<ul>
+  <li> The Suez Crisis (1965)</li>
+  <li> The Yom Kippur War (1973)</li>
+  <li> The Ever-Given (2021)</li>
+  </ul>
+<p> The Suez Crisis (1956) – Nationalization and Strategic Shock</p>
+<p> The 1956 Suez Crisis stands as a defining moment in the modern geopolitics of strategic waterways,
+demonstrating the extraordinary power a state can wield through control of a single chokepoint. When
+Egyptian President Gamal Abdel Nasser nationalized the Suez Canal, he not only asserted sovereignty
+over the vital waterway connecting Europe to Asia but also challenged the lingering influence of
+European imperial powers, particularly Britain and France, who had previously dominated its
+administration through the Suez Canal Company.</p>
+<p> In response, Britain, France, and Israel launched a coordinated military intervention to regain control,
+aiming to secure uninterrupted access to trade and assert their geopolitical interests in the region.
+However, the operation faltered under immense international pressure, with the United States and the
+Soviet Union compelling the aggressors to withdraw, marking a pivotal moment in Cold War diplomacy.</p>
+<p> The crisis underscored several critical lessons: first, that control of a maritime chokepoint can elevate
+a relatively small state to global significance; second, that such control has the potential to trigger
+confrontation among the world’s great powers; and third, that the legitimacy and sovereignty of a state over strategic infrastructure can override even superior military force.</p>
+<p> For Egypt, the crisis confirmed the Suez Canal as a source of both economic revenue and political
+leverage, providing a model for how geographic monopoly could be translated into influence on the
+international stage. In broader terms, the Suez Crisis illustrates the enduring truth that chokepoints are
+not merely commercial conduits—they are instruments of strategic power, capable of reshaping global
+alliances and compelling great powers to recalibrate their ambitions in the face of geographic reality.</p>
+<div class="map-wrapper">
+<img 
+src= "https://upload.wikimedia.org/wikipedia/commons/f/f7/Suez_canal_map.jpg?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=original" alt="Map of the Suez Canal"> 
+<span class= "caption"> Map of the Suez Canal
+</span>
+</div>
+</div>
+
+<div class="button-container">
+<div class="parent-container">
+  <a class="more-link"
+  href="https://www.britannica.com/place/Suez-Canal">
+  Learn more about the Suez Canal
+  </a>
+  </div>
+  </div>
+<h2>Sources</h2>
+<ul>
+  <li>
+    <a
+    href="https://www.britannica.com/place/Suez-Canal">
+    Encyclopaedia Britannica - Suez Canal 
+    </a>
+    </li>
+    <li>
+      <a 
+      href="https://commons.wikimedia.org/wiki/File:Suez_canal_map.jpg">
+      Suez Canal Map
+      </a>
+      </li>
+      <li>
+        
+        Morrisonova, M.N. (n.d.). <em> Suez, Straits and Strategy: Egypt in a Shifting World. (My previous paper)</em>
+        </li>
+        </ul>
+ </body>
+</html>
+
+
